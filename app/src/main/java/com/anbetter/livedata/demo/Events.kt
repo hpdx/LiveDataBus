@@ -10,8 +10,9 @@ package com.anbetter.livedata.demo
  */
 object Events {
 
-    const val POST_LIKE = 1
-    const val POST_CANCEL_LIKE = 2
+    const val USER_DATA = 1
+    const val POST_LIKE = 2
+    const val POST_CANCEL_LIKE = 3
 
 
 }
