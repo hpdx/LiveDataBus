@@ -21,8 +21,6 @@ class BusLifecycleObserver<T>(
     fun onDestroy() {
         liveData.removeObserver(observer)
         owner.lifecycle.removeObserver(this)
-
-        Log.i("XLog", "---------onDestroy()-----------")
     }
 
     override fun isAttachedTo(owner: LifecycleOwner): Boolean {

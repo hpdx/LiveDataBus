@@ -21,7 +21,6 @@ open class BusObserver<T>(
     private val mLastVersion = busLiveData.version
 
     override fun onChanged(t: T) {
-        Log.i("XLog", "mLastVersion = $mLastVersion \tbusLiveData.version = ${busLiveData.version}")
         if (mLastVersion >= busLiveData.version) {
             return
         }

@@ -2,7 +2,6 @@ package androidx.lifecycle
 
 import android.os.Handler
 import android.os.Looper
-import android.util.Log
 import androidx.annotation.MainThread
 import com.anbetter.bus.observer.BusForeverActiveObserver
 import com.anbetter.bus.observer.BusLifecycleObserver
@@ -96,8 +95,6 @@ class BusLiveData<T>(private val key: Int) : MutableLiveData<T>() {
         if (!hasObservers()) {
             mObservers.remove(key)
         }
-
-        Log.i("XLog", "---------onInactive()-----------")
     }
 
     public override fun getVersion(): Int {
